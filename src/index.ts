@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
-import config from './config';
+import config from './config/index';
 import authRoutes from './routes/auth.routes';
 import applicationRoutes from './routes/application.routes';
 import jobRoutes from './routes/job.routes';
