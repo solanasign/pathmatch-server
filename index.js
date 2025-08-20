@@ -5,13 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const config_1 = __importDefault(require("./config"));
-const auth_routes_1 = __importDefault(require("./routes/auth.routes"));
-const application_routes_1 = __importDefault(require("./routes/application.routes"));
-const job_routes_1 = __importDefault(require("./routes/job.routes"));
-const jobSeeker_routes_1 = __importDefault(require("./routes/jobSeeker.routes"));
-const employer_routes_1 = __importDefault(require("./routes/employer.routes"));
-const error_middleware_1 = require("./middleware/error.middleware");
+const config_1 = __importDefault(require("./src/config"));
+const auth_routes_1 = __importDefault(require("./src/routes/auth.routes"));
+const application_routes_1 = __importDefault(require("./src/routes/application.routes"));
+const job_routes_1 = __importDefault(require("./src/routes/job.routes"));
+const jobSeeker_routes_1 = __importDefault(require("./src/routes/jobSeeker.routes"));
+const employer_routes_1 = __importDefault(require("./src/routes/employer.routes"));
+const error_middleware_1 = require("./src/middleware/error.middleware");
 const app = (0, express_1.default)();
 // Middleware
 app.use((0, cors_1.default)({
